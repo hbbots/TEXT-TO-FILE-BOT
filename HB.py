@@ -12,8 +12,8 @@ HB = Client(
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
 )   
-CAPTION = os.environ.get["CAPTION"]
-WATERMARK = os.environ.get["WATERMARK"]
+CAPTION = os.environ.get("CAPTION", None)
+WATERMARK = os.environ.get("WATERMARK", None)
     
 START_TEXT = """**
 HI {}, 
