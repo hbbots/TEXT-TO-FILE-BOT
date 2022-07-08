@@ -1,7 +1,7 @@
 
 **_THIS BOT CAN CONVERT TEXT MESSAGES TO FILE
   SUPPORT 20 EXTENSIONS 
-  PULL REQUESTS ACCEPTED
+  PULL REQUESTS ACCEPTED_**
 
 <p align="center">
 <a href="https://t.me/alluaddict"><img alt="telegram" src="https://img.shields.io/badge/THE HB TELEGRAM-%22B1B17.svg?&logo=telegram&logoColor=red"></a>
