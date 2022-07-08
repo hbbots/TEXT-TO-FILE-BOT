@@ -16,6 +16,14 @@
       "description": "LEAVE IT",
       "value": "ANYTHING"
     },
+    "CAPTION": {
+      "description": "ADD SOMETHING ",
+      "value": ""
+    },
+    "WATERMARK": {
+      "description": "ADD SOMETHING  ",
+      "value": ""
+    },
     "BOT_TOKEN": {
       "description": "YOUR BOT TOKEN FROM @BotFather",
       "value": ""
@@ -29,16 +37,6 @@
       "value": ""
     }
   },
-  "CAPTION": {
-      "description": "ADD ANY TEXT IF YOU WANT TO ADD",
-      "value": ""
-    }
-  },
-  "WATERMARK": {
-      "description": "ADD ANY TEXT IF YOU WANT TO ADD",
-      "value": ""
-    }
-   },
   "addons": [
   ],
   "buildpacks": [{
