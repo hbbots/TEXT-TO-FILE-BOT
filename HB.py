@@ -231,14 +231,14 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "DOCKER.dockerfile"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["php"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "Site.php"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 @HB.on_message(filters.text & filters.command(["plain"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
@@ -252,35 +252,35 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "HB.yml"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["swift"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "HB.swift"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["python"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "MAIN.py"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["sql"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "MY.sql"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["C"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "Main.c"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 
 
@@ -289,97 +289,97 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "RUBY.rb"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["markdown"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "README.md"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
     
 @HB.on_message(filters.text & filters.command(["html"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "index.html"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["java"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "app.java"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["js"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "script.js"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["css"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "style.css"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["sass"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "STYLE.scss"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["perl"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "file.perl"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 @HB.on_message(filters.text & filters.command(["xml"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "PROJECT.py"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
     
 @HB.on_message(filters.text & filters.command(["sas"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup =result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "SAS .sas"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
     
 @HB.on_message(filters.text & filters.command(["shell"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "SHELL.cgi"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["matlab"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "MATLAB.matlab"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["kotlin"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "KOTLIN.kt"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["kivy"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "thelab.kv"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 
 @HB.on_message(filters.text & filters.command(["php"]))
@@ -388,7 +388,7 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text, "utf-8"))
     file_obj.name = "site.php"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=result_text)
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
 print("HB")
 
