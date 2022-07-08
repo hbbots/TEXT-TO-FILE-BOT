@@ -109,8 +109,7 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
 
 SOURCE_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🤩SOURCE🤩', url='https://hbamal.blogspot.com/2021/08/how-to-make-your-own-discussion-unpin_4.html'),
-        InlineKeyboardButton('💟TOTOURIAL💟', url='https://www.youtube.com/watch?v=sXTg5CB9dy8')
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://github.com/hbbots/TEXT-TO-FILE-BOT
         ],[
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
         ]]
@@ -141,12 +140,6 @@ async def cb_data(bot, update):
         )
     
     elif update.data == "about":
-        await update.message.edit_text(
-            text=ABOUT_TEXT,
-            disable_web_page_preview=True,
-            reply_markup=ABOUT_BUTTONS
-        )
-    elif update.data == "list":
         await update.message.edit_text(
             text=ABOUT_TEXT,
             disable_web_page_preview=True,
