@@ -1,28 +1,30 @@
 {
-  "name": "HB YOUTUBE DL BOT",
-  "description": "HB YOUTUBE DOWNLOADER BOT",
+  "name": "HB EXTENSION BOT",
+  "description": "HB TEST TO FILE BOT",
 
   "keywords": [
-    "YOUTUBE",
-    "TGBOT",
-    "YTDL",
-    "VIDEO"
+    "FILE",
+    "TEXT",
+    "EXTENSION",
+    "HB"
  
   ],
   "logo": "https://telegra.ph/file/e8a39b06fabbfac6bce8f.jpg",
-  "repository": "https://github.com/hbbots/YOUTUBE-BOT",
+  "repository": "https://github.com/hbbots/TEXT-TO-FILE-BOT",
   "env": {
     "WEBHOOK": {
       "description": "LEAVE IT",
       "value": "ANYTHING"
     },
     "CAPTION": {
-      "description": "ADD SOMETHING ",
-      "value": ""
+      "description": "ADD ANY TEXT ",
+      "value": "",
+      "required": false
     },
     "WATERMARK": {
-      "description": "ADD SOMETHING  ",
-      "value": ""
+      "description": "ADD ANY TEXT  ",
+      "value": "",
+      "required": false
     },
     "BOT_TOKEN": {
       "description": "YOUR BOT TOKEN FROM @BotFather",
