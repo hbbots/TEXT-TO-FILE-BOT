@@ -22,8 +22,8 @@
 - `API_ID` Your API ID from my.telegram.org
 - `BOT_TOKEN` Your bot token from @BotFather
 - `WEB HOOK` Leave It
-- `HOOK` Leave It
-
+- `CAPTION` Add any Text (Optional )
+- `WATERMARK` Add any Text (Optional )
 </details>
 
   
