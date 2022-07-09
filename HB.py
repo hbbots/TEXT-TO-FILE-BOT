@@ -12,9 +12,8 @@ HB = Client(
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
 )   
-CAPTION = os.environ.get("CAPTION", None)
-WATERMARK = os.environ.get("WATERMARK", None)
-    
+
+
 START_TEXT = """**
 HI {}, 
 I AM A SIMPLE 
@@ -25,7 +24,6 @@ THEN I WILL CONVERT IT INTO FILE
 MADE BY @TELSABOTS**"""
 
 list_text = """**LIST OF  LANGAUGES
-
 
 PYTHON➲  /python
 JAVA ➲  /java
@@ -40,6 +38,7 @@ KIVY ➲ /kivy
 KOTLIN ➲ /kotlin
 JAVA SCRIPT ➲  /js
 SQL ➲  /sql
+LESS ➲  /less
 SWIFT ➲  /swift
 SAS ➲ /sas
 XML ➲ /xml
@@ -206,7 +205,10 @@ result_buttons = InlineKeyboardMarkup(
         ]]
     )
 
-
+CAPTION = os.environ.get("CAPTION", None)
+            
+WATERMARK = os.environ.get("WATERMARK", None)
+    
 result_text = """**JOIN @TELSABOTS"""
 
 if bool(WATERMARK):
@@ -214,8 +216,8 @@ if bool(WATERMARK):
 else:
     caption=result_text
 
-if bool(caption):
-                caption = WATERMARK
+if bool(CAPTION):
+                caption = CAPTION
 else:
     caption=result_text
                     #EXTENSIONS
@@ -333,6 +335,7 @@ async def echo_document(client: Client, msg: Message):
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "file.perl"
     await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+            
 @HB.on_message(filters.text & filters.command(["xml"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
@@ -384,6 +387,15 @@ async def echo_document(client: Client, msg: Message):
     file_obj.name = "site.php"
     await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
 
+
+@HB.on_message(filters.text & filters.command(["less"]))
+async def echo_document(client: Client, msg: Message):
+    reply_markup = result_buttons
+    reply_markup = result_buttons
+    file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
+    file_obj.name = "HB.less"
+    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+            
 print("HB")
 
 HB.run()
