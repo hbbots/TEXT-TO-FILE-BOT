@@ -53,6 +53,7 @@ ruby - RUBY 💎
 go - GO 🐹
 rust - RUST 🦀
 yaml - YAML 🔴
+less - LESS 🟦
 docker - DOCKER  FILE 🐬
 c - C 🔵
 markdown - MARK DOWN ⬇️
