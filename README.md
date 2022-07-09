@@ -1,7 +1,6 @@
 
 **_THIS BOT CAN CONVERT TEXT MESSAGES TO FILE  
-    SUPPORT 20 EXTENSIONS   
-    PULL REQUESTS ACCEPTED_**
+    SUPPORT 20 EXTENSIONS_**
 
 <p align="center">
 <a href="https://t.me/alluaddict"><img alt="telegram" src="https://img.shields.io/badge/THE HB TELEGRAM-%22B1B17.svg?&logo=telegram&logoColor=red"></a>
@@ -26,4 +25,35 @@
 </details>
 
   
+#### ADD THESE AS COMMANDS IN BOTFATHER
 
+```python
+start-TO CHECK WETHER BOT IS 🤩ALIVE
+help-To KNOW HOW TO USE ME😇
+about -TO KNOW MORE ABOUT ME🤓
+source-TO GET SOURCE CODE❤️
+list - TO GET LIST OF  EXTENSIOSNS😛
+python - PYTHON 🐍
+java - JAVA ☕️
+html - HTML 5⃣
+css - CSS 3⃣
+php -  PHP 🐘
+sass - SASS
+perl - PERL 🐫
+shell - SHELL 🐚
+matlab - MATLAB➕
+kivy - KIVY 🐦
+kotlin - KOTLIN🔸🔹
+js - JAVASCRIPT 🟡
+sql - SQL 🗄
+swift - SWIFT 🦅
+sas - SAS 🟣
+xml - XML 🟠
+ruby - RUBY 💎
+go - GO 🐹
+rust - RUST 🦀
+yaml - YAML 🔴
+docker - DOCKER  FILE 🐬
+c - C 🔵
+markdown - MARK DOWN ⬇️
+```
