@@ -108,7 +108,7 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
 
 SOURCE_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🤩SOURCE🤩', url='https://github.com/hbbots/TEXT-TO-FILE-BOT
+        InlineKeyboardButton('🤩SOURCE🤩', url='https://github.com/hbbots/TEXT-TO-FILE-BOT')
         ],[
         InlineKeyboardButton('🔐CLOSE 🔐', callback_data='close')
         ]]
