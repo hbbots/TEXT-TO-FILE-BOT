@@ -43,6 +43,7 @@ perl - PERL 🐫
 shell - SHELL 🐚
 matlab - MATLAB➕
 kivy - KIVY 🐦
+plain - PLAIN 📃
 kotlin - KOTLIN🔸🔹
 js - JAVASCRIPT 🟡
 sql - SQL 🗄
