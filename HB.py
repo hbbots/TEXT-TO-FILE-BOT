@@ -64,15 +64,22 @@ MADE BY @TELSABOTS**
 """
 
 ABOUT_TEXT = """
- 🤖<b>BOT :MEDIA INFO 🤖</b>
-
-📢<b>CHANNEL :</b>@TELSABOTS
-
-🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
-
+ 🤖<b>BOT :TEXT TO FILE </b>
+ 
+ 🧑🏼‍💻DEV🧑🏼‍💻: @ALLUADDICT
+ 
+ 📢<b>CHANNEL :</b>@TELSABOTS
+ 
+ 📝<b>Language :</b>  <a href='https://python.org/'>Python3</a>
+ 
+ 🧰<b>Frame Work :</b>  <a href='https://pyrogram.org/'>Pyrogram</a>
+ 
+ 🤩<b>SOURCE :</b>  <a href='https://github.com/hbbots/TEXT-TO-FILE-BOT'>CLICK HERE</a>
+ 
+ 
 """
 
-SOURCE_TEXT = """</b>PRESS SOURCE BUTTON FOR SOURCE 
+SOURCE_TEXT = """<b>PRESS SOURCE BUTTON FOR SOURCE 
 AND WATCH TOTOURIAL VIDEO IF YOU WANT ANY HELP</b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
@@ -80,7 +87,7 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('📢CHANNEL📢', url='https://telegram.me/TELSABOTS'),
         InlineKeyboardButton('🧑‍💻DEV🧑‍💻', url='https://telegram.me/alluaddict')
         ],[
-        InlineKeyboardButton('🆘HELP🆘', callback_data='list'),
+        InlineKeyboardButton('🆘HELP🆘', callback_data='help'),
         InlineKeyboardButton('🤗ABOUT🤗', callback_data='about'),
         InlineKeyboardButton('🔐CLOSE🔐', callback_data='close')
         ]]
