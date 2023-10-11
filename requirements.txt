@@ -1,2 +1,2 @@
-tgcrypto
-pyrogram==1.2.9
+pyrogram==2.0.30
+tgcrypto==1.2.5
