@@ -234,14 +234,14 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "DOCKER.dockerfile"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["php"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "Site.php"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
     
 @HB.on_message(filters.text & filters.command(["plain"]))
 async def echo_document(client: Client, msg: Message):
@@ -256,35 +256,35 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "HB.yml"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["swift"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "HB.swift"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["python"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "MAIN.py"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["sql"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "MY.sql"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["C"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "Main.c"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 
 
@@ -370,21 +370,21 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "MATLAB.matlab"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["kotlin"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "KOTLIN.kt"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 @HB.on_message(filters.text & filters.command(["kivy"]))
 async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "thelab.kv"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 
 @HB.on_message(filters.text & filters.command(["php"]))
@@ -393,7 +393,7 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "site.php"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
 
 
 @HB.on_message(filters.text & filters.command(["less"]))
@@ -402,7 +402,7 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "HB.less"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup, caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup, caption=caption)
             
 print("HB")
 
