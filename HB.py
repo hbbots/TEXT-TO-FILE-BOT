@@ -13,7 +13,7 @@ HB = Client(
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
 )   
-thumbnail="hb.jpg"
+thumbnail="HB.jpg"
 
 START_TEXT = """**
 HI {}, 
