@@ -13,7 +13,7 @@ HB = Client(
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
 )   
-
+thumbnail="hb.jpg"
 
 START_TEXT = """**
 HI {}, 
@@ -248,7 +248,7 @@ async def echo_document(client: Client, msg: Message):
     reply_markup = result_buttons
     file_obj = io.BytesIO(bytes(msg.reply_to_message.text + "\n" +WATERMARK, "utf-8"))
     file_obj.name = "MSG.txt"
-    await client.send_document(msg.chat.id, file_obj, reply_markup=reply_markup,caption=caption)
+    await client.send_document(msg.chat.id, file_obj, thumb=thumbnail, reply_markup=reply_markup,caption=caption)
 
 
 @HB.on_message(filters.text & filters.command(["YAML"]))
